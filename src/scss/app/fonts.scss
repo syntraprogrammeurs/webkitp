@@ -1,6 +1,10 @@
+/**lokale fonts**/
 @font-face {
   font-family: 'pfr';
   src:url('/fonts/PlayfairDisplay-Regular.ttf')format('truetype');
-
-
 }
+/*fontawesome**/
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/regular';
