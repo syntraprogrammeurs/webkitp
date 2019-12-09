@@ -9,125 +9,184 @@
 
 
 </head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<body class="container-fluid">
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+
+<nav
+        class="navbar navbar-expand-lg navbar-light bg-white row mb-2 mb-lg-5 px-lg-0">
+    <div class="col-lg-5 d-flex">
+        <a class="navbar-brand flex-grow-1" href="#">MINIM&Oslash</a>
+        <button class="navbar-toggler" type="button"
+                data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
     </div>
+    <div class="col-lg-7">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav d-lg-flex w-100 justify-content-around">
+                <li class="nav-item active">
+                    <a class="nav-link text-uppercase" href="#">Lifestyle <span
+                            class="sr-only">(current)
+            </span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#">Photodiary</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#">Music</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#">travel</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
 </nav>
-<div class="container wrapper">
-    <div class="row">
-        <div class="col-md-4 col-xs-12">
-            <div class="card mb-3">
-                <div class="img-wrapper">
-                    <img src="images/babel.jpg" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title "><i class="fas fa-dumbbell"></i>Babel</h5>
-                    <p class="card-text">Babel is a toolchain that is mainly used to
-                        convert ECMAScript 2015+ code into...</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-xs-12">
-            <div class="card mb-3">
-                <div class="img-wrapper">
-                    <img src="images/scss.svg" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">SCSS</h5>
-                    <p class="card-text">SCSS is a preprocessor which lets you use
-                        features that aren't a part of the wider CSS...</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-xs-12">
-            <div class="card mb-3">
-                <div class="img-wrapper">
-                    <img src="images/bootstrap.png" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Bootstrap</h5>
-                    <p class="card-text">Bootstrap is the most popular CSS Framework
-                        for developing responsive...</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <br>
-    <h3>Optimized images</h3>
-    <hr>
-    <div class="row">
-
-        <div class="col-md-4 col-xs-12">
-            <div class="card mb-3">
-                <div class="img-wrapper">
-                    <img src="images/image.jpg" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">JPG image</h5>
-                    <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-xs-12">
-            <div class="card mb-3">
-                <div class="img-wrapper">
-                    <img src="images/image.png" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">PNG image</h5>
-                    <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-xs-12">
-            <div class="card mb-3">
-                <div class="img-wrapper">
-                    <img src="images/image.webp" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">WEBP image</h5>
-                    <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                </div>
-            </div>
-        </div>
+<div class="row">
+    <div class="col">
+        <img class="img-fluid w-100" src="images/backgroundheader.png" alt="">
     </div>
 </div>
+
+<div class="row">
+    <div class="col-lg-10 offset-lg-1">
+        <section class="row mx-2 mx-lg-0">
+            <div class="col-12">
+                <header>
+                    <h2 class="text-uppercase">Photodiary</h2>
+                </header>
+                <article>
+                    <header>
+                        <h3>The perfect weekend getaway</h3>
+                    </header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
+                        commodi culpa distinctio eos facilis ipsam laboriosam, laborum
+                        necessitatibus, neque odit omnis repellat, sint voluptates! A
+                        amet doloribus quasi quibusdam repudiandae. Lorem ipsum dolor
+                        sit amet, consectetur adipisicing elit. Ad aliquam debitis
+                        eveniet explicabo laudantium magnam nisi pariatur quasi quo rem
+                        repellendus suscipit tempora, tempore voluptate voluptatem.
+                        Laudantium pariatur sapiente soluta!</p>
+                </article>
+
+            </div>
+
+        </section>
+        <section class="row d-flex justify-content-around mx-2 mx-lg-0">
+            <div class="col-lg-6">
+                <article>
+                    <img class="w-100 img-fluid" src="images/image1.png" alt="">
+                    <h2 class="category">LIFESTYLE</h2>
+                    <header>
+                        <h3 class="artTitle">More than just a music festival</h3>
+                    </header>
+                    <p class="inhoudArt">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus earum et quis sunt voluptate! Ad aperiam architecto cumque minima nam rem tempore voluptatem? Consectetur corporis eaque esse in quas rem!
+                    </p>
+                </article>
+            </div>
+            <div class="col-lg-6">
+                <article>
+                    <img class="w-100 img-fluid" src="images/image2.png" alt="">
+                    <h2 class="category">LIFESTYLE</h2>
+                    <header>
+                        <h3 class="artTitle">Life tastes better with coffee</h3>
+                    </header>
+                    <p class="inhoudArt">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus earum et quis sunt voluptate! Ad aperiam architecto cumque minima nam rem tempore voluptatem? Consectetur corporis eaque esse in quas rem!
+                    </p>
+                </article>
+            </div>
+            <div class="col-lg-6">
+                <article>
+                    <img class="w-100 img-fluid" src="images/image3.png" alt="">
+                    <h2 class="category">PHOTODIARY</h2>
+                    <header>
+                        <h3 class="artTitle">American dream</h3>
+                    </header>
+                    <p class="inhoudArt">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus earum et quis sunt voluptate! Ad aperiam architecto cumque minima nam rem tempore voluptatem? Consectetur corporis eaque esse in quas rem!
+                    </p>
+                </article>
+            </div>
+            <div class="col-lg-6">
+                <article>
+                    <img class="w-100 img-fluid" src="images/image4.png" alt="">
+                    <h2 class="category">PHOTODIARY</h2>
+                    <header>
+                        <h3 class="artTitle">A day exploring the Alps</h3>
+                    </header>
+                    <p class="inhoudArt">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus earum et quis sunt voluptate! Ad aperiam architecto cumque minima nam rem tempore voluptatem? Consectetur corporis eaque esse in quas rem!
+                    </p>
+                </article>
+            </div>
+        </section>
+    </div>
+</div>
+<div class="row">
+    <section class="col text-center" id="newsletter">
+        <h3>Sign up for our newsletter!</h3>
+        <form action="" method="post">
+            <input type="email" id="email"
+                   placeholder="enter a valid email address" required>
+        </form>
+    </section>
+</div>
+
+<div class="row">
+    <div class="col-lg-10 offset-lg-1">
+        <section class="row d-flex justify-content-around mx-2 mx-lg-0">
+            <div class="col-lg-6">
+                <article>
+                    <img class="w-100 img-fluid" src="images/image5.png" alt="">
+                    <h2 class="category">LIFESTYLE</h2>
+                    <header>
+                        <h3 class="artTitle">Top 10 songs for running</h3>
+                    </header>
+                    <p class="inhoudArt">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus earum et quis sunt voluptate! Ad aperiam architecto cumque minima nam rem tempore voluptatem? Consectetur corporis eaque esse in quas rem!
+                    </p>
+                </article>
+            </div>
+            <div class="col-lg-6">
+                <article>
+                    <img class="w-100 img-fluid" src="images/image6.png" alt="">
+                    <h2 class="category">LIFESTYLE</h2>
+                    <header>
+                        <h3 class="artTitle">Cold winter days</h3>
+                    </header>
+                    <p class="inhoudArt">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus earum et quis sunt voluptate! Ad aperiam architecto cumque minima nam rem tempore voluptatem? Consectetur corporis eaque esse in quas rem!
+                    </p>
+                </article>
+            </div>
+
+        </section>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col text-center">
+        <button id="more">Load more</button>
+    </div>
+</div>
+<footer class="row">
+    <div class="col-lg-10 offset-lg-1 d-flex my-5 justify-content-around">
+        <p class="mr-4 mb-0">Terms and conditions</p>
+        <p class="flex-grow-1 mb-0 mr-4">Privacy</p>
+        <p class="mr-4 mb-0">Follow</p>
+        <p class="mr-4 mb-0"><i class="fab fa-facebook-f"></i></p>
+        <p class="mr-4 mb-0"><i class="fab fa-twitter"></i></p>
+        <p><i class="fab fa-instagram"></i></p>
+    </div>
+
+</footer>
+
+
+
 
 </body>
 </html>

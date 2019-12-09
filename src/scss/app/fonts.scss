@@ -1,7 +1,12 @@
 /**lokale fonts**/
 @font-face {
-  font-family: 'pfr';
-  src:url('/fonts/PlayfairDisplay-Regular.ttf')format('truetype');
+  font-family: pfr;
+  src: url("/fonts/PlayfairDisplay-Regular.ttf");
+}
+
+@font-face {
+  font-family: ubl;
+  src: url("/fonts/Ubuntu-Light.ttf");
 }
 
 /*fontawesome**/
