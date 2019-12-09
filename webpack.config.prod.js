@@ -58,7 +58,7 @@ module.exports = function (env, argv) {
               options: {
                 name: "[name].[ext]",
                 outputPath:'fonts/',
-
+                esModule: false,
               }
             }
           ]
