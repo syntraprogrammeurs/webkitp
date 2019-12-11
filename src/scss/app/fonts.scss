@@ -1,12 +1,12 @@
 /**lokale fonts**/
+$fontface-path:'../fonts';
 @font-face {
   font-family: pfr;
-  src: url("/fonts/PlayfairDisplay-Regular.ttf");
+  src: url('#{$fontface-path}/PlayfairDisplay-Regular.ttf');
 }
-
 @font-face {
   font-family: ubl;
-  src: url("/fonts/Ubuntu-Light.ttf");
+  src: url('#{$fontface-path}/Ubuntu-Light.ttf');
 }
 
 /*fontawesome**/

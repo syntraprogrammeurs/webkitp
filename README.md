@@ -12,6 +12,7 @@ The project has the following features:
  - Webpack dev server
  - HMR for hot reloading and faster development
  - Font loading
+ - Fontawesome loading (only free - solid and brand)
  
 #### The project is production ready.
  
