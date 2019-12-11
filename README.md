@@ -29,4 +29,10 @@ Run `npm run start:dev` to start to webpack dev server with HMR ready
 
 Run `npm run build` to build project's all assets in `dist` folder.
 
+## Starting a new project
+There's a site implemented (minimo) as an example.
+1. remove the whole body tag from the index.html file in the src folder.
+2. In src/scss/app/main.scss remove all tags to the bottom starting from the body tag.
+
+That's it happy coding!
 
