@@ -5,9 +5,10 @@ const path = require('path');
 module.exports = function(){
   return {
     mode: 'development',
-    entry: [
-      './src/app.js'
-    ],
+    entry: {
+      app:'./src/app.js'
+    }
+    ,
     watch: true,
     watchOptions: {
       aggregateTimeout: 300, // Process all changes which happened in this time into one rebuild
@@ -28,8 +29,19 @@ module.exports = function(){
     plugins: [
       new HtmlWebpackPlugin({
         title: 'Webpack starter project',
-        template: path.resolve('./src/index.html')
+        filename:'index.html',
+        chunks: ['app'],
+       template: path.resolve('./src/index.html')
+
       }),
+      new HtmlWebpackPlugin({
+
+        title: 'My Awesome application',
+        template: path.resolve('./src/users.html'),
+        chunks: ['app'],
+        filename: 'users.html'
+      }),
+
       new webpack.HotModuleReplacementPlugin()
     ],
     module: {

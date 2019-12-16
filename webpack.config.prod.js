@@ -8,9 +8,9 @@ const path = require('path');
 module.exports = function (env, argv) {
   return {
     mode: 'production',
-    entry: [
-      './src/app.js'
-    ],
+    entry: {
+      app:'./src/app.js'
+    },
 
     optimization: {
       minimizer: [
@@ -22,7 +22,16 @@ module.exports = function (env, argv) {
       new CleanWebpackPlugin(),
       new HtmlWebpackPlugin({
         title: 'Webpack starter project',
+        filename:'index.html',
+        chunks: ['app'],
         template: path.resolve('./src/index.html')
+
+      }),
+      new HtmlWebpackPlugin({
+        title: 'Webpack starter project',
+        filename:'users.html',
+        chunks: ['app'],
+        template: path.resolve('./src/users.html')
       }),
       new MiniCssExtractPlugin({
         filename: "[name].css",
