@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const path = require('path');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = function(){
   return {
@@ -27,6 +28,10 @@ module.exports = function(){
       inline: true
     },
     plugins: [
+      new CopyPlugin([
+        { from: 'src/fonts', to: 'dist' },
+        { from: 'src/images', to: 'dist' },
+      ]),
       new HtmlWebpackPlugin({
         title: 'Webpack starter project',
         filename:'index.html',
